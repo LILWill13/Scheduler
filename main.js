@@ -7,94 +7,97 @@ function currentDay(){
     var day = $('#currentDay')
     day.text(moment().format('dddd, MMMM Do'))
     // calls the color function so that it updates every minute
-
+    color()
     return day
 }
 
 
-
-var hourNow = moment().format('h')
+function color(){
+var hourNow = moment().format('HH')
 console.log(hourNow)
 // 9am
-if(hourNow === 9){
+if(hourNow == 9){
     $('#0').addClass('present');
-} else if (hourNow < 9){
+} else if (hourNow > 9 ){
     $('#0').addClass('past');
 } else {
     $('#0').addClass('future');
 }
 
 // 10am
-if(hourNow === 10){
+if(hourNow == 10){
     $('#1').addClass('present');
-} else if (hourNow < 10){
+} else if (hourNow > 10){
     $('#1').addClass('past');
 } else {
     $('#1').addClass('future');
 }
 
 // 11am
-if(hourNow === 11){
+if(hourNow == 11){
     $('#2').addClass('present');
-} else if (hourNow < 11){
+} else if (hourNow > 11){
     $('#2').addClass('past');
 } else {
     $('#2').addClass('future');
 }
 
 // 12pm
-if(hourNow === 12){
+if(hourNow == 12){
     $('#3').addClass('present');
-} else if (hourNow < 12){
+} else if (hourNow > 12){
     $('#3').addClass('past');
 } else {
     $('#3').addClass('future');
 }
 
 // 1pm
-if(hourNow === 1){
+if(hourNow == 13){
     $('#4').addClass('present');
-} else if (hourNow < 1){
+} else if (hourNow > 13){
     $('#4').addClass('past');
 } else {
     $('#4').addClass('future');
 }
 
 // 2pm
-if(hourNow === 2){
+if(hourNow == 14){
     $('#5').addClass('present');
-} else if (hourNow < 2){
+} else if (hourNow > 14){
     $('#5').addClass('past');
 } else {
     $('#5').addClass('future');
 }
 
 // 3pm
-if(hourNow === 3){
+if(hourNow == 15){
     $('#6').addClass('present');
-} else if (hourNow < 3){
+} else if (hourNow > 15){
     $('#6').addClass('past');
 } else {
     $('#6').addClass('future');
 }
 
 // 4pm
-if(hourNow === 4){
+if(hourNow == 16){
     $('#7').addClass('present');
-} else if (hourNow < 4){
+} else if (hourNow > 16){
     $('#7').addClass('past');
 } else {
     $('#7').addClass('future');
 }
 
 // 5pm
-if(hourNow === 5){
+if(hourNow == 17){
     $('#8').addClass('present');
-} else if (hourNow < 5){
+} else if (hourNow > 17){
     $('#8').addClass('past');
 } else {
     $('#8').addClass('future');
 }
+}
+
+
 
 // 9am save button and local storage
 $('#btn0').click(function () {
