@@ -81,16 +81,17 @@ body {
     height: 5rem;
   }
 
+  .list-group-item:hover {
+    background-color: #8fdbff;
+  }
+
   .text{
     padding-top: 2%;
     padding-right: 1%; 
     font-size: 20px;
   }
 
-  .green {
-    background-color: #77dd77;
+  .saveBtn {
+    height: 5em;
   }
 
-  .gray{
-    background-color: #d3d3d3;
-  }
